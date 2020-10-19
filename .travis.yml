@@ -27,7 +27,7 @@ after_success:
   - docker push yeeeeehan/multi-server
   - docker push yeeeeehan/multi-worker
 
-# Deploy to AWS
+# Deploy to AWS 
 deploy:
   provider: elasticbeanstalk
   region: 'ap-southeast-1'

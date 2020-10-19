@@ -1,0 +1,28 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+# build a test image, so have to use the dev version of Dockerfile
+before_install:
+  - docker build -t yeeeeehan/react-test -f ./client/Dockerfile.dev ./client
+
+# (Test running section) Any script exits with a code other that 0, Travis CI
+#  will assume the build failed
+script:
+  - docker run -e CI=true yeeeeehan/react-test npm test
+
+# Add configuration for production version, and push to image to docker hub
+after_success:
+  - docker build -t yeeeeehan/multi-client ./client
+  - docker build -t yeeeeehan/multi-nginx ./nginx
+  - docker build -t yeeeeehan/multi-server ./server
+  - docker build -t yeeeeehan/multi-worker ./worker
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push yeeeeehan/multi-client
+  - docker push yeeeeehan/multi-nginx
+  - docker push yeeeeehan/multi-server
+  - docker push yeeeeehan/multi-worker

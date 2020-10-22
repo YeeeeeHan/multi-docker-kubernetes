@@ -4,17 +4,15 @@
 * [About the Project](#about-the-project)
   * [Workflow](#workflow)
   * [Built With](#built-with)
-* [Local Deployment](#local-deployment)
+* [Local Development](#local-development)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+* [Deployment](#local-development)
+  * [Commit and Push to Github](#local-development)
+  * [Create PR - Travis CI tests](#local-development)
+  * [Merge PR](#local-development)
+  * [Travis CI deployment - Deployment to GKE](#local-development)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -89,20 +87,12 @@ echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 
 
 <!-- USAGE EXAMPLES -->
-## Usage 
+## Deployment
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
+### Commit and Push to Github
+### Create PR - Travis CI tests
+### Merge PR
+### Travis CI deployment - Deployment to GKE
 
 
 <!-- CONTACT -->

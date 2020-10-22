@@ -4,7 +4,7 @@
 * [About the Project](#about-the-project)
   * [Workflow](#workflow)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
+* [Local Deployment](#local-deployment)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -44,7 +44,7 @@ This section should list any major frameworks that you built your project using.
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Local development
 
 To get a local copy up and running follow these simple example steps.
 

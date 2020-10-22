@@ -2,9 +2,9 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Workflow](#workflow)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -47,20 +47,12 @@ This section should list any major frameworks that you built your project using.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+### Running Locally
+
+1. Clone the repo
 ```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/YeeeeeHan/multi-docker-kubernetes.git
 ```
 3. Install NPM packages
 ```sh

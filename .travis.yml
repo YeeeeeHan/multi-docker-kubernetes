@@ -8,7 +8,8 @@ env:
     # Configures google CLI to disable all user prompts
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
-  - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d  # Download and install google cloud SDK
+  - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d  
+  # Download and install google cloud SDK
   - curl https://sdk.cloud.google.com | bash > /dev/null;
   - source $HOME/google-cloud-sdk/path.bash.inc
   # Install kubectl inside of Travis environment
@@ -21,11 +22,11 @@ before_install:
   # Login to Docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # Build the test image + tag
-  - docker build -t yeeeeehan/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t limyeehan/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   # Run tests 
-  - docker run -e CI=true yeeeeehan/react-test npm test
+  - docker run -e CI=true limyeehan/react-test npm test
 
 
 deploy:

@@ -5,6 +5,7 @@
   * [Workflow](#workflow)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -47,20 +48,42 @@ This section should list any major frameworks that you built your project using.
 
 To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
 
+1. Install minikube
+```sh
+brew install minikube
+```
+
+3. Start kubectl
+```sh
+brew install kubectl
+```
 ### Running Locally
 
 1. Clone the repo
 ```sh
 git clone https://github.com/YeeeeeHan/multi-docker-kubernetes.git
 ```
-3. Install NPM packages
+2. cd into the repo
 ```sh
-npm install
+cd multi-docker-kubernetes
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+3. Start minikube
+```sh
+minikube start --driver=hyperkit
+```
+4. Create local Kubernetes cluster from configuration files
+```sh
+kubectl apply -f k8s
+```
+5. Determine minikube ip
+```sh
+minkube ip
+```
+6. Run IP address in web browser (Google Chrome) 
+```sh
+echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 ```
 
 

@@ -4,10 +4,10 @@
 * [About the Project](#about-the-project)
   * [Workflow](#workflow)
   * [Built With](#built-with)
-* [Local Development](#local-development)
+* [Local development workflow](#Local-development-workflow)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Deployment](#local-development)
+* [Deployment workflow](#Deployment-workflow)
   * [Commit and Push to feature branch](#local-development)
   * [Create PR - Travis CI tests](#local-development)
   * [Merge PR](#local-development)
@@ -42,44 +42,44 @@ This section should list any major frameworks that you built your project using.
 
 
 <!-- GETTING STARTED -->
-## Local development
+## Local development workflow
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### 1. Prerequisites
 
-1. Install minikube
+Install minikube
 ```sh
 brew install minikube
 ```
 
-3. Start kubectl
+Start kubectl
 ```sh
 brew install kubectl
 ```
-### Running Locally
+### 2. Running Locally
 
-1. Clone the repo
+Clone the repo
 ```sh
 git clone https://github.com/YeeeeeHan/multi-docker-kubernetes.git
 ```
-2. cd into the repo
+cd into the repo
 ```sh
 cd multi-docker-kubernetes
 ```
-3. Start minikube
+Start minikube
 ```sh
 minikube start --driver=hyperkit
 ```
-4. Create local Kubernetes cluster from configuration files
+Create local Kubernetes cluster from configuration files
 ```sh
 kubectl apply -f k8s
 ```
-5. Determine minikube ip
+Determine minikube ip
 ```sh
 minkube ip
 ```
-6. Run IP address in web browser (Google Chrome) 
+Run IP address in web browser (Google Chrome) 
 ```sh
 echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 ```
@@ -87,7 +87,7 @@ echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 
 
 <!-- USAGE EXAMPLES -->
-## Deployment
+## Deployment workflow
 
 ### 1. Commit and Push to feature branch
 Push to feature branch

@@ -95,11 +95,10 @@ Push to feature branch
 git push origin feature
 ```
 ### 2. Create PR - Travis CI tests triggered
-Create PR
-<img src="images/b.png" height="324">
-
-Travis CI tests triggered
-<img src="images/e.png" height="324">
+Create PR  
+<img src="images/b.png" height="324">  
+Travis CI tests triggered  
+<img src="images/e.png" height="324">  
 
 ### 3. Merge PR
 Merge PR

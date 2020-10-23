@@ -97,6 +97,7 @@ git push origin feature
 ### 2. Create PR - Travis CI tests triggered
 Create PR
 <img src="images/b.png" height="324">
+
 Travis CI tests triggered
 <img src="images/e.png" height="324">
 
@@ -107,8 +108,10 @@ Merge PR
 ### 4. Travis CI deployment - Deployment to GKE
 Travis CI auto-deployment to GKE
 <img src="images/j.png" height="324">
+
 Deployment to GKE
 <img src="images/k.png" height="324">
+
 App deployed
 <img src="images/l.png" height="324">
 

@@ -94,13 +94,23 @@ echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 ```sh
 git push origin feature
 ```
-### Create PR - Travis CI tests
+### Create PR - Travis CI tests triggered
 1. Create PR
 <img src="images/b.png" height="324">
-
+2. Travis CI tests triggered
+<img src="images/e.png" height="324">
 
 ### Merge PR
+1. Merge PR
+<img src="images/g.png" height="324">
+
 ### Travis CI deployment - Deployment to GKE
+1. Travis CI auto-deployment to GKE
+<img src="images/j.png" height="324">
+2. Deployment to GKE
+<img src="images/k.png" height="324">
+3. App deployed
+<img src="images/l.png" height="324">
 
 
 <!-- CONTACT -->

@@ -101,18 +101,18 @@ Travis CI tests triggered
 <img src="images/e.png" height="324">  
 
 ### 3. Merge PR
-Merge PR
-<img src="images/g.png" height="324">
+Merge PR  
+<img src="images/g.png" height="324">  
 
 ### 4. Travis CI deployment - Deployment to GKE
-Travis CI auto-deployment to GKE
-<img src="images/j.png" height="324">
+Travis CI auto-deployment to GKE  
+<img src="images/j.png" height="324">  
 
-Deployment to GKE
-<img src="images/k.png" height="324">
+Deployment to GKE  
+<img src="images/k.png" height="324">  
 
-App deployed
-<img src="images/l.png" height="324">
+App deployed  
+<img src="images/l.png" height="324">  
 
 
 <!-- CONTACT -->

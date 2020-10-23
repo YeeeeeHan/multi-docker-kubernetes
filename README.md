@@ -90,8 +90,15 @@ echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 ## Deployment
 
 ### Commit and Push to feature branch
-
+1. Push to feature branch
+```sh
+git push origin feature
+```
 ### Create PR - Travis CI tests
+1. Create PR
+[![Product Name Screen Shot][b]](https://example.com)
+
+
 ### Merge PR
 ### Travis CI deployment - Deployment to GKE
 
@@ -113,3 +120,5 @@ Project Link: [https://github.com/YeeeeeHan/multi-docker-kubernetes/](https://gi
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-url]: https://linkedin.com/in/limyeehan
 [product-screenshot]: images/screenshot.png
+[b]: images/b.png
+

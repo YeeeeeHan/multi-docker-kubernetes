@@ -5,13 +5,13 @@
   * [Workflow](#workflow)
   * [Built With](#built-with)
 * [Local development workflow](#Local-development-workflow)
-  * [1. Prerequisites](#1.-Prerequisites)
-  * [2. Running Locally](#2. Running Locally)
+  * [1. Prerequisites]
+  * [2. Running Locally]
 * [Deployment workflow](#Deployment-workflow)
-  * [Commit and Push to feature branch](#local-development)
-  * [Create PR - Travis CI tests](#local-development)
-  * [Merge PR](#local-development)
-  * [Travis CI deployment - Deployment to GKE](#local-development)
+  * [1. Commit and Push to feature branch]
+  * [2. Create PR - Travis CI tests triggered]
+  * [3. Merge PR]
+  * [4. Travis CI deployment - Deployment to GKE]
 * [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->

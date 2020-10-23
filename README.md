@@ -17,7 +17,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="images/screenshot.png" height="324">
 
 This is my first experience with Docker and Kubernetes, and is a project that is done in conjunction with a [Udemy course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/) that I enrolled in October 2020.
 The main focus of the project is to build a custom CI/CD pipeline with Github, Travis-CI and Google Kubernetes Engine to facilitate local development and automated deployments.
@@ -96,7 +96,7 @@ git push origin feature
 ```
 ### Create PR - Travis CI tests
 1. Create PR
-[![Product Name Screen Shot][b]](https://example.com)
+<img src="images/b.png" height="324">
 
 
 ### Merge PR

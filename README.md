@@ -8,7 +8,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Deployment](#local-development)
-  * [Commit and Push to Github](#local-development)
+  * [Commit and Push to feature branch](#local-development)
   * [Create PR - Travis CI tests](#local-development)
   * [Merge PR](#local-development)
   * [Travis CI deployment - Deployment to GKE](#local-development)
@@ -89,7 +89,8 @@ echo $(minikube ip) |  { read ip; open -a "Google Chrome" http://$ip; }
 <!-- USAGE EXAMPLES -->
 ## Deployment
 
-### Commit and Push to Github
+### Commit and Push to feature branch
+
 ### Create PR - Travis CI tests
 ### Merge PR
 ### Travis CI deployment - Deployment to GKE
